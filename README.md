@@ -254,4 +254,3 @@ This project provided practical experience with:
 - Internal Documentation Search
 - Content Understanding Platform
 - E-learning Systems
-# YT_RAG
