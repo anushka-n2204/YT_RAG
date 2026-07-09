@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>YouTube RAG Assistant</title>
+
+    <link rel="stylesheet" href="css/chatbot.css">
+
+</head>
+
+<body>
+
+    <!-- ===================== Sidebar ===================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>🎥 YouTube RAG</h2>
+
+        </div>
+
+        <div class="user-card">
+
+            <div class="avatar">
+
+                👤
+
+            </div>
+
+            <h3>Welcome</h3>
+
+            <p id="userid">
+
+                User ID
+
+            </p>
+
+        </div>
+
+        <button id="logoutBtn">
+
+            Logout
+
+        </button>
+
+    </aside>
+
+
+
+    <!-- ===================== Main ===================== -->
+
+    <main class="main">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <h1>
+
+                YouTube AI Assistant
+
+            </h1>
+
+            <p>
+
+                Chat with any YouTube Video using Retrieval Augmented Generation (RAG)
+
+            </p>
+
+        </header>
+
+
+
+        <!-- ================= Video Loading ================= -->
+
+        <section class="ingestion-card">
+
+            <input
+
+                id="youtube_url"
+
+                type="text"
+
+                placeholder="Paste YouTube URL here..."
+
+            >
+
+            <button id="loadVideoBtn">
+
+                Load Video
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ================= Video Information ================= -->
+
+        <section class="video-card">
+
+            <img
+
+                id="thumbnail"
+
+                src="https://placehold.co/320x180?text=YouTube"
+
+                alt="Thumbnail"
+
+            >
+
+            <div class="video-details">
+
+                <h2 id="videoTitle">
+
+                    No Video Loaded
+
+                </h2>
+
+                <p id="status">
+
+                    Waiting for Video...
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= Chat Area ================= -->
+
+        <section
+
+            class="chat-container"
+
+            id="chatContainer"
+
+        >
+
+            <div class="bot-message">
+
+                👋 Welcome to YouTube RAG Assistant.
+
+                <br><br>
+
+                Paste a YouTube URL and click
+
+                <b>Load Video</b>.
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= Typing ================= -->
+
+        <div
+
+            class="typing"
+
+            id="typing"
+
+        >
+
+            🤖 AI is Thinking...
+
+        </div>
+
+
+
+        <!-- ================= Chat Input ================= -->
+
+        <section class="chat-input">
+
+            <input
+
+                type="text"
+
+                id="question"
+
+                placeholder="Ask a question about the video..."
+
+            >
+
+            <button id="sendBtn">
+
+                Send
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= Scripts ================= -->
+
+    <script src="js/api.js"></script>
+
+    <script src="js/chatbot.js"></script>
+
+</body>
+
+</html>
