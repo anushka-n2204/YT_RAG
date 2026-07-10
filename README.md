@@ -1,4 +1,4 @@
-🎥 YouTube Transcript RAG Chatbot
+# 🎥 YouTube Transcript RAG Chatbot
 
 Overview
 
